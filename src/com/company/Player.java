@@ -1,5 +1,8 @@
 package com.company;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Player {
 
     private String name;
@@ -26,8 +29,13 @@ public class Player {
         credit = ammount;
     }
 
-    void kaufen(int position){
-
+    static void kaufen(int position, List<ImmoTest> ImmobilienListe){
+        for(ImmoTest i : ImmobilienListe) {
+            if (i.position == position){
+                System.out.println("Player kauft: " + i.name);
+                break;
+            }
+        }
     }
 
 
