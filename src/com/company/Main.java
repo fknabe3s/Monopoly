@@ -34,8 +34,6 @@ public class Main {
         Player1.kaufen(1, ImmobilienListe);
 
 
-        //System.out.print(Wasserwerk.name);
-
         //Die Die0 = new Die(1, 6);
 
         //for(int i=0; i<9; i++){
