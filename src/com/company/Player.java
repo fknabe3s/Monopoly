@@ -21,7 +21,7 @@ public class Player {
         return name;
     }
 
-    int getMoney() {
+    public int getMoney() {
         return credit;
     }
 
@@ -29,7 +29,7 @@ public class Player {
         credit = ammount;
     }
 
-    static void kaufen(int position, List<ImmoTest> ImmobilienListe){
+    public void kaufen(int position, List<ImmoTest> ImmobilienListe){
         if(position==0){
             System.out.println("Los kann nicht gekauft werden!");
             return;
@@ -39,9 +39,15 @@ public class Player {
         for(ImmoTest i : ImmobilienListe) {  // gewünschtes Element suchen
             if (i.position == position){
                 System.out.println("Player möchte " + i.name + " kaufen");
-                if (i.wert < getMoney()) {
+                if (i.wert <= getMoney()) {
                     System.out.println("Player hat genug Geld!");
-                    i.kaufen(i);
+                    if(i.kaufen(name)) {                //kaufen war erfolgreich
+                        credit -= i.wert;
+                        System.out.println("Spieler " + name + " hat jetzt noch " + credit + " Dollar");
+                    }                     // kaufen wird beauftragt, dabei wird geprüft, ob das Objekt noch frei ist
+                }
+                else{
+                    System.out.println("Player hat nicht genug Geld!");         // es wird nicht versucht das Objekt zu kaufen und die Methode verlassen
                 }
                 return;
             }

@@ -5,9 +5,10 @@ package com.company;
  */
 class StraßeTest extends ImmoTest{
 
-    StraßeTest (int position, String name){
+    StraßeTest (int position, String name, int wert){
         this.position = position;
         this.name = name;
+        this.wert = wert;
 
 
     }
