@@ -4,8 +4,6 @@
     <list default="true" id="718fda51-b77d-4dba-8127-e82acb52fedb" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Monopoly/com/company/Main.class" afterPath="$PROJECT_DIR$/out/production/Monopoly/com/company/Main.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/company/Main.java" afterPath="$PROJECT_DIR$/src/com/company/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/company/Player.java" afterPath="$PROJECT_DIR$/src/com/company/Player.java" />
     </list>
     <ignored path="Monopoly.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -469,7 +467,13 @@
       <option name="project" value="LOCAL" />
       <updated>1449571864239</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Testweise Immobilien Liste implementiert&#10;erste Funnktionen in der Player-Class implementiert">
+      <created>1449573427190</created>
+      <option name="number" value="00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1449573427190</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -513,7 +517,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Testweise Immobilien Liste implementiert" />
-    <option name="LAST_COMMIT_MESSAGE" value="Testweise Immobilien Liste implementiert" />
+    <MESSAGE value="Testweise Immobilien Liste implementiert&#10;erste Funnktionen in der Player-Class implementiert" />
+    <option name="LAST_COMMIT_MESSAGE" value="Testweise Immobilien Liste implementiert&#10;erste Funnktionen in der Player-Class implementiert" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
