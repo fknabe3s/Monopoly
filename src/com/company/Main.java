@@ -14,16 +14,18 @@ public class Main {
 
 
         ImmobilienListe.add(new StraßeTest(0,"Los"));
-        ImmobilienListe.add(new WerkTest(1,"sued"));
-        ImmobilienListe.add(new WerkTest(2,"ost"));
-        ImmobilienListe.add(new StraßeTest(3,"Str1"));
-        ImmobilienListe.add(new StraßeTest(4,"Str2"));
+        ImmobilienListe.add(new StraßeTest(1,"Schlossstraße"));
+        ImmobilienListe.add(new StraßeTest(2,"Grantham-Allee"));
+        ImmobilienListe.add(new WerkTest(3,"Wasserwerk"));
+        ImmobilienListe.add(new StraßeTest(4,"Hauptstraße"));
+        ImmobilienListe.add(new StraßeTest(5,"B56"));
 
 
 
+        Player.kaufen(0, ImmobilienListe);
         Player.kaufen(1, ImmobilienListe);
         Player.kaufen(2, ImmobilienListe);
-        Player.kaufen(3, ImmobilienListe);
+        Player.kaufen(6, ImmobilienListe);
 
 
         //System.out.print(Wasserwerk.name);

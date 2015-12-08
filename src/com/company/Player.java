@@ -30,12 +30,24 @@ public class Player {
     }
 
     static void kaufen(int position, List<ImmoTest> ImmobilienListe){
-        for(ImmoTest i : ImmobilienListe) {
+        if(position==0){
+            System.out.println("Los kann nicht gekauft werden!");
+            return;
+        }
+
+
+        for(ImmoTest i : ImmobilienListe) {  // gewünschtes Element suchen
             if (i.position == position){
-                System.out.println("Player kauft: " + i.name);
-                break;
+                System.out.println("Player möchte " + i.name + " kaufen");
+                if (i.wert < getMoney()) {
+                    System.out.println("Player hat genug Geld!");
+                    i.kaufen(i);
+                }
+                return;
             }
         }
+
+        System.out.println("An der Position " + position + " existiert keine Straße");
     }
 
 
